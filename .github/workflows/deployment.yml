@@ -10,7 +10,7 @@ jobs:
       - name: Run commands  
         run: | 
           npm install
-          npm lint
+          npm run lint
   run-test:
     name: Test
     runs-on: ubuntu-latest
@@ -30,4 +30,4 @@ jobs:
       - name: Run commands  
         run: | 
           npm install
-          npm build
+          npm run build
