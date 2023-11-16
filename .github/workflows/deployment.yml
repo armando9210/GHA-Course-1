@@ -12,7 +12,7 @@ jobs:
           npm install
           npm lint
   run-test:
-    name: Lint
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,7 +22,7 @@ jobs:
           npm install
           npm test
   run-build:
-    name: Lint
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
