@@ -1,4 +1,4 @@
-name: Deployment
+name: Output event details
 on: 
   issues:
   types: [opened, edited, closed]
