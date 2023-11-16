@@ -1,14 +1,14 @@
 name: Output event details
 on: 
   issues:
-  types: [opened, edited, closed]
+    types: [opened, edited, closed]
 jobs:
   post-issue:
     name: Post Issue Info
     runs-on: ubuntu-latest
     steps:
       - name: Show issue
-      run: |
-      echo "Issue title: ${{ github.event.issue.title }}"
-      echo "Issue body: ${{ github.event.issue.body }}"
+        run: |
+          echo "Issue title: ${{ github.event.issue.title }}"
+          echo "Issue body: ${{ github.event.issue.body }}"
 
